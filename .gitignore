@@ -24,4 +24,4 @@
 /public/system/*
 .ruby-version
 /config/database.yml
-
+database.yml
