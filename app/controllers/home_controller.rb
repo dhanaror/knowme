@@ -1,7 +1,7 @@
 class HomeController < ApplicationController
-  before_filter :authenticate_user!
+	before_filter :authenticate_user!
   def index
-    render :text=>"Welcome buddy"
+    render :text=>"Welcome",:layout=>true
   end
 
   def new

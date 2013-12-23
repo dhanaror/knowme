@@ -12,7 +12,7 @@ body {
 	background-color: #fff;
 }
 
-a, a:link, a:visited { color: #000; font-weight: normal; }
+a, a:link, a:visited { color: #000; font-weight: normal; text-decoration: none; }
 
 a:hover { color: #CC0000; text-decoration:none; }
 
