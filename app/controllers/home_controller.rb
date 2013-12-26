@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
-	before_filter :authenticate_user!
+	before_filter :authenticate_user!,:except=>[:test]
   def index
     render :text=>"Welcome",:layout=>true
   end

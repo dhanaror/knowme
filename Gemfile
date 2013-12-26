@@ -33,6 +33,9 @@ group :doc do
 end
 
 gem 'devise'
+
+#for using haml instead of html
+gem 'haml'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
