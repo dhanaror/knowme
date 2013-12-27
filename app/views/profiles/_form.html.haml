@@ -1,0 +1,17 @@
+= form_for @profile do |f|
+  .textfield
+    =f.label :first_name
+    =f.text_field :first_name
+  .textfield 
+    =f.label :last_name
+    =f.text_field :last_name
+  .textarea  
+    =f.label :about_me
+    =f.text_area :description
+  .attachment  
+    =f.label :my_image
+    =f.file_field :image
+  = f.submit
+
+  / %style{:type=>"text/css"}
+  /  .textfield{width:10px;}
