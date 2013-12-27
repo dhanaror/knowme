@@ -7,10 +7,32 @@
    <%= csrf_meta_tags %>
 </head>
 <body>
-   <%=params["alert"]%>
+<div class="wrapper jsc-sidebar-content jsc-sidebar-pulled">
+   <nav> <a href="#" class="icon-menu link-menu jsc-sidebar-trigger">Menu</a> </nav>
+   <section class="main-content">
+      <%=params["alert"]%>
+      <%= yield %>
+   </section>
+</div>
+<nav class="sidebar jsc-sidebar" id="jsi-nav" data-sidebar-options="">
+<ul class="sidebar-list">
+   <li>
+     <a href="#" class="current">Download</a>
+   </li>
    <%if user_signed_in?%>
-      <%=link_to "Clear Session",destroy_user_session_path,method: :delete%>
+   <li>
+     <%=link_to "Clear Session",destroy_user_session_path,method: :delete%>
+   </li>
    <%end%>
-   <%= yield %>
+   <li>
+     <a href="http://www.jqueryscript.net">More jQuery Plugins</a>
+   </li>
+</ul>
+</nav> 
 </body>
 </html>
+<script type="text/javascript">
+$('#jsi-nav').sidebar({
+  trigger: '.jsc-sidebar-trigger'
+});
+</script>

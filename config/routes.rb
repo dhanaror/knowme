@@ -10,6 +10,11 @@ KnowTest::Application.routes.draw do
     get 'test',on: :collection
    end
 
+   resources 'profiles'
+
+   #for site side controller 
+   resources 'sites'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

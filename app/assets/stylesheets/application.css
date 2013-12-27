@@ -12,3 +12,7 @@
  *= require_tree .
  */
 a{text-decoration:none;}
+li{list-style:none;}
+
+/*for menu background color*/
+.sidebar{background-color:#312F2F;}

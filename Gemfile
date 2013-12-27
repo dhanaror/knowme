@@ -36,6 +36,9 @@ gem 'devise'
 
 #for using haml instead of html
 gem 'haml'
+
+#for image and document attachment
+gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
